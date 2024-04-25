@@ -17,7 +17,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const session: TSessionProps | null = await getServerSession(authOptions);
-  console.log(session);
+
   return (
     <html lang="en" data-theme="light">
       <body>

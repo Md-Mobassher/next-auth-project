@@ -1,4 +1,5 @@
 import { TSessionProps } from "@/type";
+import { signOut } from "next-auth/react";
 import Link from "next/link";
 
 const Navbar = ({ session }: { session: TSessionProps | null }) => {
@@ -60,16 +61,21 @@ const Navbar = ({ session }: { session: TSessionProps | null }) => {
         </ul>
       </div>
       <div className="navbar-end">
-        <button className="btn btn-error btn-outline text-white rounded-full px-5">
-          Logout
-        </button>
-
-        <Link
-          href="/login"
-          className="btn btn-accent btn-outline text-white rounded-full px-5"
-        >
-          Login
-        </Link>
+        {session?.user ? (
+          <button
+            className="btn btn-error btn-outline text-white rounded-full px-5"
+            onClick={() => signOut()}
+          >
+            Logout
+          </button>
+        ) : (
+          <Link
+            href="/login"
+            className="btn btn-accent btn-outline text-white rounded-full px-5"
+          >
+            Login
+          </Link>
+        )}
       </div>
     </div>
   );
