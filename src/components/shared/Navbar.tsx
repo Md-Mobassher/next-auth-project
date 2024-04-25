@@ -1,6 +1,7 @@
+import { TSessionProps } from "@/type";
 import Link from "next/link";
 
-const Navbar = () => {
+const Navbar = ({ session }: { session: TSessionProps | null }) => {
   return (
     <div className="navbar bg-base-100  border-b  w-[90%] mx-auto">
       <div className="navbar-start">
