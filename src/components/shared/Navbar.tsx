@@ -67,7 +67,8 @@ const Navbar = ({ session }: { session: TSessionProps | null }) => {
             className="btn btn-error btn-outline text-white rounded-full px-5"
             onClick={() =>
               signOut({
-                callbackUrl: "http://localhost:3000",
+                callbackUrl:
+                  "https://nextjs-authentication-client-vakuzidwr.vercel.app",
               })
             }
           >
