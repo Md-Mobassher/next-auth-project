@@ -11,8 +11,8 @@ This project is a Next.js application that implements custom registration and lo
 
 ## Deployment
 
-- Client-side: [Next.js Authentication Client](https://nextjs-authentication-client-vakuzidwr.vercel.app/)
-- Server-side: [Next.js Custom Auth Server](https://nextjs-custom-auth-server-fyt5ijo69.vercel.app/)
+- Client-side: [Next.js Authentication Client](https://nextjs-authentication-client.vercel.app)
+- Server-side: [Next.js Custom Auth Server](https://nextjs-custom-auth-server-fyt5ijo69.vercel.app)
 
 ## Technologies Used
 

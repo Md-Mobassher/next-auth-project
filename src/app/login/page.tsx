@@ -99,7 +99,7 @@ const LoginPage = () => {
               onClick={() =>
                 signIn("google", {
                   callbackUrl:
-                    "https://nextjs-authentication-client-vakuzidwr.vercel.app/dashboard",
+                    "https://nextjs-authentication-client.vercel.app/dashboard",
                 })
               }
             >
@@ -115,7 +115,7 @@ const LoginPage = () => {
               onClick={() =>
                 signIn("github", {
                   callbackUrl:
-                    "https://nextjs-authentication-client-vakuzidwr.vercel.app/dashboard",
+                    "https://nextjs-authentication-client.vercel.app/dashboard",
                 })
               }
             >
