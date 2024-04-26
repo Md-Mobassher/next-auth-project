@@ -1,3 +1,4 @@
+"use client";
 import { TSessionProps } from "@/type";
 import { signOut } from "next-auth/react";
 import Link from "next/link";
@@ -64,7 +65,11 @@ const Navbar = ({ session }: { session: TSessionProps | null }) => {
         {session?.user ? (
           <button
             className="btn btn-error btn-outline text-white rounded-full px-5"
-            onClick={() => signOut()}
+            onClick={() =>
+              signOut({
+                callbackUrl: "http://localhost:3000",
+              })
+            }
           >
             Logout
           </button>
